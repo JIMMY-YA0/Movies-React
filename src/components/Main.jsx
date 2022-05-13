@@ -13,19 +13,16 @@ const Main = () => {
     });
   }, []);
 
-  console.log(movies.length);
+  // console.log(movies);
 
-  // function truncateString(str, num) {
-  //   return str?.length > num ? str.substr(0, num - 1) + "..." : str;
-  // }
   const truncateString = (str, num) => (str?.length > num ? str.substr(0, num - 1) + "..." : str);
 
   return (
-    <div className="w=full h-[550px] text-white">
+    <div className="flex top-100 w=full h-[550px] text-white">
       <div className="w-full h-full">
         <div className="absolute w-full h-[550px] bg-gradient-to-r from-black"></div>
         <img
-          className="w-full h-full object-cover"
+          className="w-full h-[550px] object-cover "
           src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`}
           alt={movie?.title}
         />
