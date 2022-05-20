@@ -18,7 +18,7 @@ const Main = () => {
   const truncateString = (str, num) => (str?.length > num ? str.substr(0, num - 1) + "..." : str);
 
   return (
-    <div className="flex top-100 w=full h-[550px] text-white">
+    <div className="flex w=full h-[550px]   text-white">
       <div className="w-full h-full">
         <div className="absolute w-full h-[550px] bg-gradient-to-r from-black"></div>
         <img

@@ -21,27 +21,28 @@ const Row = ({ title, fetchURL, rowId }) => {
     let slider = document.getElementById(rowId);
     slider.scrollLeft += 500;
   };
+
   return (
     <div className="w-[90%] m-auto">
-      <h2 className="text-white font-bold opacity md:text-xl p-4">{title}</h2>
+      <h2 className="text-white font-bold opacity md:text-xl m-2">{title}</h2>
 
       <div className="flex relative items-center group">
         <MdChevronLeft
           onClick={sliderLeft}
-          className=" hidden absolute -left-5 top-[30%] bg-white rounded-full opacity-50 group-hover:block hover:opacity-100 cursor-pointer z-10"
+          className="hidden absolute -left-5 top-[30%] bg-white rounded-full opacity-50 group-hover:block hover:opacity-100 cursor-pointer z-10 "
           size={40}
         />
         <div
-          className=" w-full h-full flex relative items-start px-2 scroll-smooth overflow-x-scroll scrollbar-hide"
+          className=" w-full h-full flex relative items-start mx-2 scroll-smooth overflow-x-scroll scrollbar-hide"
           id={rowId}
         >
-          {movies.map((item, id) => (
-            <Moive key={id} item={item} />
+          {movies.map((item) => (
+            <Moive key={item?.id} item={item} />
           ))}
         </div>
         <MdChevronRight
           onClick={sliderRight}
-          className=" hidden absolute -right-5 top-[30%] bg-white rounded-full opacity-50 group-hover:block hover:opacity-100 cursor-pointer z-10"
+          className="hidden absolute -right-5 top-[30%] bg-white rounded-full opacity-50 group-hover:block hover:opacity-100 cursor-pointer z-10"
           size={40}
         />
       </div>
