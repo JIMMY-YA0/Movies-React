@@ -18,7 +18,7 @@ function Navbar() {
     <div className="w-full h-full bg-black sticky z-20 top-0 left-0 right-0  ">
       <header className="text-white flex justify-between px-8 pt-2 ">
         <Link to="/home">
-          <h1 className=" sticky text-red-600 font-bold text-4xl cursor-pointer">NETFLIX</h1>
+          <h1 className=" sticky text-red-600 font-bold text-4xl cursor-pointer">MICROVIEW</h1>
         </Link>
 
         {user?.email ? (

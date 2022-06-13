@@ -2,6 +2,7 @@ import { async } from "@firebase/util";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { UserAuth } from "../context/AuthContext";
+import sigup_img from "../asset/bg_img.jpg";
 
 const Signup = () => {
   const [email, setEmail] = useState("");
@@ -24,7 +25,7 @@ const Signup = () => {
       <div className="w-full h-full">
         <img
           className=" sm:block fixed opacity-60 w-full h-screen object-cover"
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/f841d4c7-10e1-40af-bcae-07a3f8dc141a/f6d7434e-d6de-4185-a6d4-c77a2d08737b/US-en-20220502-popsignuptwoweeks-perspective_alpha_website_medium.jpg"
+          src={sigup_img}
           alt="/"
         />
 

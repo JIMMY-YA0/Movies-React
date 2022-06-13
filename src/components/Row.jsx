@@ -20,6 +20,12 @@ const Row = ({ title, fetchURL, rowId }) => {
   const sliderRight = () => {
     let slider = document.getElementById(rowId);
     slider.scrollLeft += 500;
+    console.log(slider.scrollLeft);
+  };
+
+  const scrollMove = () => {
+    let slider = document.getElementById(rowId);
+    console.log(slider.scrollLeft);
   };
 
   return (
@@ -42,6 +48,7 @@ const Row = ({ title, fetchURL, rowId }) => {
         </div>
         <MdChevronRight
           onClick={sliderRight}
+          onChange={scrollMove}
           className="hidden absolute -right-5 top-[30%] bg-white rounded-full opacity-50 group-hover:block hover:opacity-100 cursor-pointer z-10"
           size={40}
         />
