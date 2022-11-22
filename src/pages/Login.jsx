@@ -57,7 +57,7 @@ const Login = () => {
                   <p>Nedd Help?</p>
                 </div>
                 <p className="py-8 text-gray-600 ">
-                  New to BlackScreen?{" "}
+                  New to MacroView?{" "}
                   <Link className="text-white" to="/signup ">
                     Sign Up
                   </Link>

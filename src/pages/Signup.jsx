@@ -57,7 +57,7 @@ const Signup = () => {
                   <p>Nedd Help?</p>
                 </div>
                 <p className="py-8 text-gray-600 ">
-                  Already subscribe BlackScreen?{" "}
+                  Already subscribe MacroView?{" "}
                   <Link className="text-white" to="/login ">
                     Sign In
                   </Link>
